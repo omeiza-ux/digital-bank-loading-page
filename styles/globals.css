@@ -1,0 +1,184 @@
+* {
+padding: 0;
+margin: 0;
+}
+
+body {
+  font-family: "Public Sans", sans-serif;  
+  background-color: hsl(0, 100%, 100%); 
+  width:100%;
+
+
+}
+.container1 {
+  position: relative;
+  width: 100%;
+  height: 450px;
+  max-width: 100%; /* Optional, for extra safety */
+  overflow: hidden; /* Prevents any overflow */
+}
+.img1, .img2 {
+  width: 100%;
+  height: 120%;
+  object-fit: cover;
+  display: block;    /* Prevents inline spacing issues */
+}
+.img2 {
+  position: absolute;
+  left: 20px;
+  right: 20px;
+  top: 0;
+  width: calc(100% - 40px);
+  height: 100%;
+}
+
+.top-section {
+  background-color: hsl(0, 0%, 98%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10%;
+  padding-top: 5px;
+  padding-left: 20px;
+  z-index: 1;
+  display: flex;              /* Make items appear on the same line */
+  justify-content: space-between; /* Opposite ends */
+  align-items: center;       
+}
+.svg {
+  height: 38px;               /* Set SVG size */
+  width: 100px;
+  stroke: gray;               /* SVG line color */
+  fill: none;                 /* Transparent fill */
+}
+.section-one {
+  padding-bottom:80px;
+}
+.h1 {
+ padding-top:40px;  
+ text-align:center; 
+ font-size:30px;
+}
+.text {
+   text-align:center;
+   padding:20px;
+   opacity: 0.5; 
+   margin-bottom:30px;
+}
+.container {
+text-align: center;    
+height:50px;
+background-color: hsla(136, 38%, 49%, 1.00);
+border-radius: 25px;
+margin: 0 auto;
+width:40%;
+}
+.box1 {
+  text-align:center;
+  color:white;
+  padding-top:12px;
+}
+.Why-Digitalbank {
+  padding:40 40px;
+  background-color:hsl(0, 0%, 98%);
+}
+.h2 {
+  padding-top:30px; 
+ text-align:center; 
+ font-size:30px;
+}
+.img {
+width:100%;
+text-align: center;    
+height:50px;
+}
+.text0 {
+   padding-top:50px;
+ text-align:center; 
+ font-size:20px;
+}
+.text1 {
+  text-align:center;
+   padding:30px;
+   opacity: 0.5; 
+   margin-bottom:15px;
+}
+.section-two {
+  padding-bottom: 60px;
+}
+.container2 {
+  position: relative;
+  width: 100%;
+  min-height: 200px;           /* Adjust for flexibility */
+  height: auto;                /* Let height grow to fit content */
+  overflow: hidden;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  box-sizing: border-box;
+}
+
+.art-img {
+  border-radius: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+  max-width: 600px;             /* limits size on larger screens */
+  width: 100%;                  /* fills parent */
+}
+
+.art-img img {
+  width: 100%;                  /* responsive scaling */
+  height: auto;
+  display: block;
+  border-radius: 10px;
+}
+
+.art-variant {
+  padding-left:50px;
+  padding-right:50px;
+}
+.publisher {
+ padding-top:20px;
+ opacity: 0.5; 
+ font-size:15px;
+}
+.txt {
+  padding-top:15px;
+  font-size:18px;
+}
+.txt2 {
+  opacity: 0.5; 
+   padding-top:10px;
+   padding-bottom:30px;
+}
+.section-three {
+  background-color: hsl(233, 26%, 24%);
+  padding-bottom:20px;
+  text-align:center;
+}
+.logo-dark {
+  padding-top: 40px;
+}
+.mini-img {
+  display: flex;
+  justify-content: center;
+  padding-top: 15px;
+  gap: 20px; 
+}
+
+.mini {
+  width:30px;
+  gap:20px;
+  height:30px;
+  display:inline-block;
+}
+.detail-section{
+  color: hsl(0, 100%, 100%);
+  padding-top:20px;
+  line-height:40px;
+  padding-bottom:30px;
+}
