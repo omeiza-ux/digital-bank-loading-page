@@ -52,7 +52,7 @@ body {
   fill: none;                 /* Transparent fill */
 }
 .section-one {
-  padding-bottom:80px;
+  padding-bottom:50px;
 }
 .h1 {
  padding-top:40px;  
@@ -177,19 +177,28 @@ height:50px;
   height:30px;
   display:inline-block;
 }
+
 .detail-section{
   color: hsl(0, 100%, 100%);
   padding-top:20px;
   line-height:40px;
   padding-bottom:30px;
 }
+
 .card {
   background:  hsl(0, 100%, 100%);
+  margin-bottom:20px;
 }
+
 .break-2 {
-padding: 40px 40px 0;
+padding: 20px 20px 0;
 background: hsl(220, 16%, 96%);
+}.spacer {
+  height: 30px; /* the gap height */
+  width: 100%;
+  background: transparent
 }
+
 @media screen and (min-width: 700px) {
 .break-1 {
     width: 70%;
@@ -199,8 +208,64 @@ background: hsl(220, 16%, 96%);
     justify-content: center; /* Only relevant if using flexbox on parent */
     /* padding-bottom: 0 is included in shorthand above */
   }
+
 }
 
 @media screen and (min-width: 700px) {
+  .why-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10%;
+    justify-content: flex-start; /* Correct for left alignment */
+  }
+
+  .why {
+    width: 45%;
+    box-sizing: border-box;
+  }
+}
+
+@media screen and (min-width: 800px){
+  .cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10%;
+  justify-content: flex-start;
+  row-gap: 20px;  /* adds space between rows */
+}
+.break-1 {
+    width: 90%;
+    margin: 0 auto;
+    background:  hsl(220, 16%, 96%);
+    padding: 20px 20px 0;
+    justify-content: center; 
+  }
+.why {
+    width: 25%;
+    box-sizing: border-box;
+  }
+.card {
+  width: 45%;
+  box-sizing: border-box;
+}
+.publisher {
+  padding:0;
+  padding-top:20px;
+  opacity: 0.5; 
+  font-size:9px;
+}
+.txt {
+  padding-top:15px;
+  font-size:15px;
+}
+.txt2 {
+  opacity: 0.5; 
+   padding-top:10px;
+   padding-bottom:30px;
+   font-size:12px;
+}
+}
+
+@media screen and (min-width: 900px) {
 
 }
