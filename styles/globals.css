@@ -200,7 +200,8 @@ background: hsl(220, 16%, 96%);
 }
 
 @media screen and (min-width: 700px) {
-.break-1 {
+
+  .break-1 {
     width: 70%;
     margin: 0 auto;
     background:  hsl(220, 16%, 96%);
@@ -225,14 +226,16 @@ background: hsl(220, 16%, 96%);
   }
 }
 
-@media screen and (min-width: 800px){
-  .cards {
+@media screen and (min-width: 900px) {
+
+.cards {
   display: flex;
   flex-wrap: wrap;
-  gap: 10%;
+  gap: 4%;
   justify-content: flex-start;
   row-gap: 20px;  /* adds space between rows */
 }
+
 .break-1 {
     width: 90%;
     margin: 0 auto;
@@ -245,7 +248,7 @@ background: hsl(220, 16%, 96%);
     box-sizing: border-box;
   }
 .card {
-  width: 45%;
+  width: 48%;
   box-sizing: border-box;
 }
 .publisher {
@@ -264,8 +267,89 @@ background: hsl(220, 16%, 96%);
    padding-bottom:30px;
    font-size:12px;
 }
+.img1 {
+  display:none;
+}
+.img3 {
+  display:block;
+}
+.desktop01 {
+  display:flex;
+  direction:row-reverse;
+  flex-direction: row-reverse;
+}
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1040px) {
+ .cards {
+  gap: 3%;
+  row-gap: 0px;
+}
+ .card {
+  width: 22%;
+  box-sizing: border-box;
+}
+.publisher {
+  padding:0;
+  padding-top:20px;
+  opacity: 0.5; 
+  font-size:9px;
+}
+.txt {
+  padding-top:15px;
+  font-size:10px;
+}
+.txt2 {
+  opacity: 0.5; 
+   padding-top:10px;
+   padding-bottom:30px;
+   font-size:8px;
+}
+.why-list {
+   gap: 2%;
+  row-gap: 1px;
+}
+.why {
+    width: 20%;
+    box-sizing: border-box;
+    background-color:hsl(0, 100%, 100%);
+    margin-left:20px;
+    margin-right:20px;
+    border-radius:18px;   
+  }
 
+.img {
+ width:100%;
+ text-align: center;    
+ height:20px;
+ 
+}
+.text0 {
+   padding-top:60px;
+ text-align:center; 
+ font-size:20px;
+}
+.text1 {
+  text-align:center;
+   padding:px;
+   opacity: 0.5; 
+   margin-bottom:15px;
+}
+.container2 {
+  position: relative;
+  width: 100%;
+  height: 100px; 
+             /* Let height grow to fit content */
+}
+.art-img img {
+  width: 100%;                  /* responsive scaling */
+  height: 100%;
+   min-height: 100px;  
+  display: block;
+}
+.img2 {
+   left: 20px;
+  top: 0;
+  width: calc(100% - 70px)
+}
 }
