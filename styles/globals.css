@@ -6,9 +6,8 @@ margin: 0;
 body {
   font-family: "Public Sans", sans-serif;  
   background-color: hsl(0, 100%, 100%); 
-  width:100%;
+ }
 
-}
 .container1 {
   position: relative;
   width: 100%;
@@ -79,7 +78,7 @@ width:40%;
   padding-top:12px;
 }
 .Why-Digitalbank {
-  padding:40 40px;
+  padding:40px 40px;
   background-color:hsl(0, 0%, 98%);
 }
 .h2 {
@@ -109,10 +108,9 @@ height:50px;
 .container2 {
   position: relative;
   width: 100%;
-  min-height: 200px;           /* Adjust for flexibility */
-  height: auto;                /* Let height grow to fit content */
+  height: 200px;          /* choose a height that looks good */
   overflow: hidden;
-  border-radius:0px;
+  border-radius: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -122,48 +120,49 @@ height:50px;
 }
 
 .art-img {
-  border-radius: 15px;
-  padding-left: 0px;
-  padding-right: 0px;
-  box-sizing: border-box;
-  max-width: 600px;             /* limits size on larger screens */
-  width: 100%;                  /* fills parent */
+  width: 100%;
+  height: 100%;           /* fill container */
 }
 
 .art-img img {
-  width: 100%;                  /* responsive scaling */
-  height: auto;
-  display: block;
+  width: 100%;
+  height: 100%;           /* match container height */
+  object-fit: cover;      /* crop to fill, no distortion */
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
 
 .art-variant {
-  padding-left:50px;
-  padding-right:50px;
+  padding-left:40px;
+  padding-right:40px;
 }
 .publisher {
  padding-top:20px;
  opacity: 0.5; 
  font-size:15px;
 }
+
 .txt {
   padding-top:15px;
   font-size:18px;
 }
+
 .txt2 {
   opacity: 0.5; 
    padding-top:10px;
    padding-bottom:30px;
 }
+
 .section-three {
   background-color: hsl(233, 26%, 24%);
   padding-bottom:20px;
   text-align:center;
 }
+
 .logo-dark {
   padding-top: 40px;
 }
+
 .mini-img {
   display: flex;
   justify-content: center;
@@ -193,10 +192,11 @@ height:50px;
 .break-2 {
 padding: 20px 20px 0;
 background: hsl(220, 16%, 96%);
+
 }.spacer {
   height: 30px; /* the gap height */
   width: 100%;
-  background: transparent
+  background: transparent;
 }
 
 @media screen and (min-width: 700px) {
@@ -243,8 +243,13 @@ background: hsl(220, 16%, 96%);
     padding: 20px 20px 0;
     justify-content: center; 
   }
+  .why-list {
+   gap: 2%;
+  row-gap: 1px;
+  }
+
 .why {
-    width: 25%;
+    width: 22%;
     box-sizing: border-box;
   }
 .card {
@@ -277,6 +282,10 @@ background: hsl(220, 16%, 96%);
   display:flex;
   direction:row-reverse;
   flex-direction: row-reverse;
+}
+.section-one {
+  padding-top: 110px;
+  align-content: left;
 }
 }
 
@@ -321,7 +330,7 @@ background: hsl(220, 16%, 96%);
 .img {
  width:100%;
  text-align: center;    
- height:20px;
+
  
 }
 .text0 {
@@ -335,21 +344,44 @@ background: hsl(220, 16%, 96%);
    opacity: 0.5; 
    margin-bottom:15px;
 }
-.container2 {
-  position: relative;
-  width: 100%;
-  height: 100px; 
-             /* Let height grow to fit content */
-}
-.art-img img {
-  width: 100%;                  /* responsive scaling */
-  height: 100%;
-   min-height: 100px;  
-  display: block;
-}
+ .container2 {
+    position: relative;
+    width: 100%;
+    height: auto; /* keep auto */
+  }
+
+  .art-img img {
+    width: 100%;
+    height: auto; /* keep auto for aspect ratio */
+    display: block;
+  }
+
 .img2 {
    left: 20px;
   top: 0;
-  width: calc(100% - 70px)
+}
+
+.section-one {
+  padding-top: 110px;
+  text-align: left;
+}
+.h1  {
+  text-align: left;
+  padding-left:70px;
+}
+.text {
+  text-align: left;
+  padding-left:70px;
+}
+.box1 {
+  text-align: center;
+  padding-right:0px;
+}
+.container {
+  height: 50px;
+  background-color: hsla(136, 38%, 49%, 1);
+  border-radius: 25px;
+  width: calc(80% - 40px);
+  justify-content: left;
 }
 }
