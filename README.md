@@ -2,10 +2,8 @@
 # digital-bank-loading-page
 a simple digital banking loading page. this project tends to challenge junior dev like myself when it comes to image placement and overflow.
 =======
-# Frontend Mentor - Digitalbank landing page
-
-![Design preview for the Digitalbank landing page coding challenge](preview.jpg)
-
+# Frontend Mentor - Digitalbank landing page Domain
+(https://digital-bank-loading-page.vercel.app/)
 ## Welcome! 👋
 
 Thanks for checking out this front-end coding challenge.
